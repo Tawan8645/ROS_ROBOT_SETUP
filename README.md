@@ -13,43 +13,39 @@
 # Command Create Workspace ( ROS )
  Create Workspace
  ```bash
-  1 . mkdir name_ws
+  mkdir name_ws
  ```
  ```bash
-  2 . cd name_ws/
+  cd name_ws/
  ```
  ```bash
-  3 . mkdir src
+  mkdir src
  ```
  ```bash
-  4 . cd src/
+  cd src/
  ```
  ```bash
-  5 . catkin_create_pkg name_pkg rospy roscpp std_msgs geometry_msgs
+  catkin_create_pkg name_pkg rospy roscpp std_msgs geometry_msgs
  ```
  ```bash
-  6 . cd name_pkg/
+  cd name_pkg/
  ```
  ```bash
-  7 . ls
+  ls
+  cd src/
  ```
  ```bash
-  8 . cd src/
+  touch name_project_cpp
  ```
  ```bash
-  9 . touch name_project_cpp
+  touch name_project_py
  ```
  ```bash
-  10 . touch name_project_py
+  cd
+  cd name_ws/
  ```
  ```bash
-  11 . cd
- ```
- ```bash
-  12 . cd name_ws/
- ```
- ```bash
-  13 . catkin_make
+  catkin_make
  ```
   เข้า
  ```bash
@@ -70,6 +66,9 @@
   ใส่ 
  ```bash
   source /home/name pc/name_ws/devel/setup.bash 
+ ```
+ ```bash
+  rospack list 
  ```
   บันทึกด้วยการ ctrl o ตามด้วย enter 
   เพื่อเป็นการเปิดให้ ROS เห็น package ที่สร้าง
