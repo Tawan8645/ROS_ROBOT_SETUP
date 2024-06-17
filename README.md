@@ -13,7 +13,7 @@
 # Command Create Workspace ( ROS )
  Create Workspace
  
-  <a href="#" onclick="navigator.clipboard.writeText('ข้อความที่ต้องการคัดลอก'); return false;">1 . mkdir name_ws</a>
+  [1 . mkdir name_ws](javascript:void(navigator.clipboard.writeText('ข้อความที่ต้องการคัดลอก')));
 
   
   2 . cd name_ws/
