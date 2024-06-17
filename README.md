@@ -56,11 +56,9 @@
   nano CMakeLists.txt 
  ```
   สามารถแก้ไฟล์ package ได้
- ```bash
-  cd 
- ```
   กลับหน้าหลัก พิมพ์ 
  ```bash
+  cd
   nano .bashrc 
  ```
   ใส่ 
