@@ -57,7 +57,7 @@
  ```
   พิมพ์ 
  ```bash
-  nano CMakelists.txt 
+  nano CMakeLists.txt 
  ```
   สามารถแก้ไฟล์ package ได้
  ```bash
