@@ -51,12 +51,10 @@
  ```bash
   roscd name_pkg 
  ```
-  พิมพ์ 
+  พิมพ์ สามารถแก้ไฟล์ package ได้
  ```bash
   nano CMakeLists.txt 
  ```
-  สามารถแก้ไฟล์ package ได้
-  
   กลับหน้าหลัก พิมพ์ 
  ```bash
   cd
