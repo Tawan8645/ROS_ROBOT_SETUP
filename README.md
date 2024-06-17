@@ -12,7 +12,7 @@
 
 # Command Create Workspace ( ROS )
  Create Workspace
- 
+ ```bash
   1 . mkdir name_ws
 
   2 . cd name_ws/
@@ -41,4 +41,5 @@
   
   เข้า roscd name_pkg พิมพ์ nano CMakelists.txt สามารถแก้ไฟล์ package ได้
   cd กลับหน้าหลักพิมพ์ nano .bashrc ใส่ source /home/name pc/name_ws/devel/setup.bash บันทึกด้วยการ ctrl o ตามด้วย enter 
-  เพื่อเป็นการเปิดให้ ROS เห็น package ที่สร้าง 
+  เพื่อเป็นการเปิดให้ ROS เห็น package ที่สร้าง
+ ```
