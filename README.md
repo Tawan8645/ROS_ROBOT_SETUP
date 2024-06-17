@@ -56,6 +56,7 @@
   nano CMakeLists.txt 
  ```
   สามารถแก้ไฟล์ package ได้
+  
   กลับหน้าหลัก พิมพ์ 
  ```bash
   cd
