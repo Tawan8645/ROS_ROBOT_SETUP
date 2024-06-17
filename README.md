@@ -13,7 +13,7 @@
 # Command Create Workspace ( ROS )
  Create Workspace
  
-  [1 . mkdir name_ws](javascript:void(navigator.clipboard.writeText('ข้อความที่ต้องการคัดลอก')));
+  1 . mkdir name_ws
 
   2 . cd name_ws/
   
