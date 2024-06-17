@@ -62,7 +62,8 @@
  ```
   ใส่ 
  ```bash
-  source /home/name pc/name_ws/devel/setup.bash 
+  source /home/name pc/name_ws/devel/setup.bash
+  source .bashrc
  ```
   บันทึกด้วยการ ctrl o ตามด้วย enter 
   เพื่อเป็นการเปิดให้ ROS เห็น package ที่สร้าง
