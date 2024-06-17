@@ -67,6 +67,7 @@
  ```bash
   source /home/name pc/name_ws/devel/setup.bash 
  ```
+  เช็ค package
  ```bash
   rospack list 
  ```
