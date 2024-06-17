@@ -15,7 +15,6 @@
  
   [1 . mkdir name_ws](javascript:void(navigator.clipboard.writeText('ข้อความที่ต้องการคัดลอก')));
 
-  
   2 . cd name_ws/
   
   3 . mkdir src
