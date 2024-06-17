@@ -12,5 +12,5 @@
 
 # Command Create Workspace ( ROS )
  Create Workspace
-
- " mkdir name_ws "
+ 
+ mkdir name_ws
