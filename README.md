@@ -72,3 +72,16 @@
  ```bash
   rospack list 
  ```
+
+source /opt/ros/noetic/setup.bash
+source /home/tawan/z_control_bot_ws/devel/setup.bash
+source /home/tawan/z_motorrun_ws/devel/setup.bash
+
+
+export ROS_MASTER_URI=http://192.168.118.183:11311
+export ROS_IP=192.168.118.183
+
+
+
+
+
