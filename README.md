@@ -82,6 +82,10 @@ export ROS_MASTER_URI=http://192.168.118.183:11311
 export ROS_IP=192.168.118.183
 
 
+ทำให้ NODE ที่สร้างใช้งานได้้
+cd เข้าไปในแพคแกจ
+chmod u+x talker.py
+
 
 
 
