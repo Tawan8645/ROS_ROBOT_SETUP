@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+import rospy
+from geometry_msgs.msg import Twist
+import time
+
+class SimpleAutoControl:
+    def __init__(self):
+        rospy.init_node('simple_auto_control')
+        self.pub = rospy.Publisher('cmd_vel', Twist, queue_size=1)
+        self.twist = Twist()
+
+        # กำหนดความเร็ว
+        self.linear_speed = 0.5  # m/s
+        self.angular_speed = 1.0  # rad/s
+        self.forward_duration = 5  # วินาที
+        self.stop_duration = 2  # วินาที
+        self.turn_duration = 3  # วินาที
+
+    def move_forward(self):
+        self.twist.linear.x = self.linear_speed
+        self.twist.angular.z = 0
+        self.pub.publish(self.twist)
+        rospy.loginfo("Moving forward")
+        time.sleep(self.forward_duration)
+
+    def stop(self):
+        self.twist.linear.x = 0
+        self.twist.angular.z = 0
+        self.pub.publish(self.twist)
+        rospy.loginfo("Stopping")
+        time.sleep(self.stop_duration)
+
+    def turn_left(self):
+        self.twist.linear.x = 0
+        self.twist.angular.z = self.angular_speed
+        self.pub.publish(self.twist)
+        rospy.loginfo("Turning left")
+        time.sleep(self.turn_duration)
+
+    def turn_right(self):
+        self.twist.linear.x = 0
+        self.twist.angular.z = -self.angular_speed
+        self.pub.publish(self.twist)
+        rospy.loginfo("Turning right")
+        time.sleep(self.turn_duration)
+
+    def run(self):
+        while not rospy.is_shutdown():
+            self.move_forward()
+            self.stop()
+            self.turn_left()
+            self.stop()
+            self.turn_right()
+            self.stop()
+
+if __name__ == "__main__":
+    try:
+        control = SimpleAutoControl()
+        control.run()
+    except rospy.ROSInterruptException:
+        pass
